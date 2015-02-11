@@ -22,6 +22,12 @@ using MonitoringAgentMetricClient;
 
 namespace Test
 {
+    /// <summary>
+    /// An example for the usage of the telnet client.
+    /// 
+    /// The first part reports 20 single metric, the second part reports those
+    /// 20 metrics at once.
+    /// </summary>
     class Example
     {
         static void Main(string[] args)

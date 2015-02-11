@@ -15,6 +15,7 @@
 // under the License.
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,7 @@ namespace MonitoringAgentMetricClient
     {
         public String Apply(Metric metric)
         {
+            Contract.Requires<ArgumentNullException>(metric != null);
             // TODO: implement tags
             var sb = new StringBuilder();
             sb.Append(metric.ApplicationName).Append(" ");
